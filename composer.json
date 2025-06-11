@@ -1,5 +1,5 @@
 {
-    "name": "debugdiario/laravel-sdk",
+    "name": "seu-usuario/asaas-laravel-sdk",
     "description": "SDK Laravel para integração com a API do Asaas",
     "type": "library",
     "license": "MIT",
@@ -7,7 +7,7 @@
     "authors": [
         {
             "name": "Carlos",
-            "email": "carlos@exemplo.com"
+            "email": "carlostmj2019@gmail.com"
         }
     ],
     "require": {
@@ -21,21 +21,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Asaas\\": "src/"
+            "AsaasLaravel\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Asaas\\Tests\\": "tests/"
+            "AsaasLaravel\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Asaas\\Providers\\AsaasServiceProvider"
+                "AsaasLaravel\\Providers\\AsaasServiceProvider"
             ],
             "aliases": {
-                "Asaas": "Asaas\\Facades\\Asaas"
+                "Asaas": "AsaasLaravel\\Facades\\Asaas"
             }
         }
     },
