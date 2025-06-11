@@ -1,5 +1,5 @@
 {
-    "name": "asaas/laravel-sdk",
+    "name": "debugdiario/laravel-sdk",
     "description": "SDK Laravel para integração com a API do Asaas",
     "type": "library",
     "license": "MIT",
