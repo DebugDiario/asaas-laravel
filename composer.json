@@ -1,0 +1,44 @@
+{
+    "name": "asaas/laravel-sdk",
+    "description": "SDK Laravel para integração com a API do Asaas",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["asaas", "laravel", "payment", "api", "sdk"],
+    "authors": [
+        {
+            "name": "Carlos",
+            "email": "carlos@exemplo.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "illuminate/support": "^9.0|^10.0|^11.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "orchestra/testbench": "^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Asaas\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Asaas\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Asaas\\Providers\\AsaasServiceProvider"
+            ],
+            "aliases": {
+                "Asaas": "Asaas\\Facades\\Asaas"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
